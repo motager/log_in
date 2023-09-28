@@ -1,8 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-class English extends StatelessWidget {
-  const English({super.key});
+class Login extends StatelessWidget {
+  const Login({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,14 +10,14 @@ class English extends StatelessWidget {
       child: Scaffold(
         
         appBar: AppBar(
-          backgroundColor: const Color.fromARGB(255, 70, 69, 69),
+        backgroundColor: Colors.purple[200],
           elevation: 50.0,
           title: const Center(
             child: Text(
               "Log in",
               style: TextStyle(
                 fontSize: 35.0,
-                color: Colors.blue,
+                color: Colors.white,
                 fontWeight: FontWeight.bold,
                 fontFamily: "myfont",
               ),
@@ -83,7 +83,7 @@ class English extends StatelessWidget {
               margin: const EdgeInsets.fromLTRB(30.0, 18.0, 30.0, 18.0),
               // color: Colors.purple[400],
               decoration: BoxDecoration(
-                color: Colors.purple,
+                color: Colors.purple[400],
                 borderRadius: BorderRadius.circular(90),
               ),
               child: TextButton(
@@ -97,7 +97,7 @@ class English extends StatelessWidget {
                 },
                 child: Text(
                   "log in",
-                  style: TextStyle(color: Colors.blue, fontSize: 30.0),
+                  style: TextStyle(color: Colors.white, fontSize: 30.0),
                 ),
               ),
             ),
@@ -106,6 +106,17 @@ class English extends StatelessWidget {
               
           ),
         ),
+         floatingActionButton: FloatingActionButton(
+         backgroundColor:   Colors.purple[400],
+          onPressed: () {
+            Navigator.pushNamed(context, "/");
+          },
+          
+          child: 
+          Icon(Icons.home,
+            
+          ),
+        ), 
       ),
     );
   }
