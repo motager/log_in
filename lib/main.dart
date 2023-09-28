@@ -7,7 +7,7 @@ import 'package:flutter/rendering.dart';
 
 void main() {
   runApp(const MyApp());
-}
+}    
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: English(),
+    
     );
   }
 }
