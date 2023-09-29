@@ -7,7 +7,7 @@ import 'package:log_in/pages/log_in.dart';
 import 'package:log_in/pages/sign_up.dart';
 
 import 'package:log_in/pages/welcome.dart';
-// import 'package:flutter_svg/svg.dart';
+
 
 void main() {
   runApp(const MyApp());
