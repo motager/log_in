@@ -7,23 +7,23 @@ class Signup extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.purple[200],
-          title: Center(
-            child: Text(
-              "  Sign up",
-              style: TextStyle(
-                fontSize: 30.0,
-                fontWeight: FontWeight.bold,
-                fontFamily: "myfont",
-                color: Colors.white,
-              ),
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.purple[200],
+        title: Center(
+          child: Text(
+            "  Sign up",
+            style: TextStyle(
+              fontSize: 30.0,
+              fontWeight: FontWeight.bold,
+              fontFamily: "myfont",
+              color: Colors.white,
             ),
           ),
         ),
-        body: Column(
+      ),
+      body: SingleChildScrollView(
+        child: Column(
           // mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
@@ -129,14 +129,14 @@ class Signup extends StatelessWidget {
             ),
           ],
         ),
-        floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.purple[400],
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: Icon(
-            Icons.home,
-          ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.purple[400],
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        child: Icon(
+          Icons.home,
         ),
       ),
     );
